@@ -21,7 +21,7 @@
 // var params = ['mini', 'url', 'title'];
 
 var liClassicShare = function(url) {
-    window.open(url, '_blank', "scrollbars,width=700,height=700");
+    window.open(url, '_blank', "scrollbars,width=700,height=562");
 }
 
 
