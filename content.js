@@ -1,4 +1,4 @@
-// Replaces the image used for the frog face emoji with a more appropriate one.
+// Allows the user to share the page using LinkedIn.
 
 //     Copyright (C) 2017  Ricardo Bánffy
 
@@ -17,9 +17,6 @@
 
 // Injected in the page, runs from there
 
-
-// var params = ['mini', 'url', 'title'];
-
 var liClassicShare = function(url) {
     window.open(url, '_blank', "width=700,height=562");
 }
@@ -31,9 +28,12 @@ chrome.runtime.onMessage.addListener(
         if (request.message === 'clicked_browser_action') {
             console.log('clicked_browser_action triggered');
             if (!document.URL.startsWith("https://www.linkedin.com/uas/login?")
-                && !document.URL.startsWith("https://www.linkedin.com/shareArticle")) {
-                liClassicShare("https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(document.URL) +
-                               "&title=" + encodeURIComponent(document.title));
+                && !document.URL.startsWith(
+                    "https://www.linkedin.com/shareArticle")) {
+                liClassicShare(
+                    "https://www.linkedin.com/shareArticle?mini=true&url="
+                        + encodeURIComponent(document.URL)
+                        + "&title=" + encodeURIComponent(document.title));
             }
         }
     }

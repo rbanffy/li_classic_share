@@ -2,8 +2,8 @@
     "manifest_version": 2,
 
     "name": "Classic share for LinkedIn",
-    "description": "Browser extension to allow to .",
-    "version": "0.0.1",
+    "description": "Browser extension that allows the user to share the page using LinkedIn.",
+    "version": "0.0.2",
 
     "permissions": [
         "tabs",
