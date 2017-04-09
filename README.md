@@ -1,6 +1,7 @@
 # LinkedIn Classic Share
 
-Browser plugin that allows one to share using the classic LinkedIn interface.
+Browser extension that allows one to share using the classic LinkedIn
+interface.
 
 Since LinkedIn's recent site redesign, it became difficult to share to
 groups, Twitter and contacts at the same time. With this browser
