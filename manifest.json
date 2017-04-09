@@ -3,7 +3,7 @@
 
     "name": "Classic share for LinkedIn",
     "description": "Browser extension that allows the user to share the page using LinkedIn.",
-    "version": "0.0.2",
+    "version": "0.0.3",
 
     "permissions": [
         "tabs",
