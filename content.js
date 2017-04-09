@@ -18,7 +18,7 @@
 // Injected in the page, runs from there
 
 var liClassicShare = function(url) {
-    window.open(url, '_blank', "width=700,height=562");
+    window.open(url, '_blank', "width=700,height=562,scrollbars=no");
 }
 
 
